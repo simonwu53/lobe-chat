@@ -10,7 +10,7 @@ import { Flexbox } from 'react-layout-kit';
 
 import { ModelItemRender, ProviderItemRender } from '@/components/ModelSelect';
 import { isDeprecatedEdition } from '@/const/version';
-import ActionDropdown from '@/features/ChatInput/components/ActionDropdown';
+import ActionDropdown from '@/features/ChatInput/ActionBar/components/ActionDropdown';
 import { useEnabledChatModels } from '@/hooks/useEnabledChatModels';
 import { useAgentStore } from '@/store/agent';
 import { agentSelectors } from '@/store/agent/slices/chat';
@@ -40,7 +40,14 @@ const useStyles = createStyles(({ css, prefixCls }) => ({
 
 const menuKey = (provider: string, model: string) => `${provider}-${model}`;
 
-const ModelSwitchPanel = memo<PropsWithChildren>(({ children }) => {
+const ModelSwitchPanel = memo<
+  PropsWithChildren<{
+    onOpenChange?: (open: boolean) => void;
+    open?: boolean;
+    setUpdating?: (updating: boolean) => void;
+    updating?: boolean;
+  }>
+>(({ children, setUpdating, onOpenChange, open }) => {
   const { t } = useTranslation('components');
   const { styles, theme } = useStyles();
   const [model, provider, updateAgentConfig] = useAgentStore((s) => [
@@ -57,8 +64,10 @@ const ModelSwitchPanel = memo<PropsWithChildren>(({ children }) => {
       const items = provider.children.map((model) => ({
         key: menuKey(provider.id, model.id),
         label: <ModelItemRender {...model} {...model.abilities} />,
-        onClick: () => {
-          updateAgentConfig({ model: model.id, provider: provider.id });
+        onClick: async () => {
+          setUpdating?.(true);
+          await updateAgentConfig({ model: model.id, provider: provider.id });
+          setUpdating?.(false);
         },
       }));
 
@@ -129,16 +138,26 @@ const ModelSwitchPanel = memo<PropsWithChildren>(({ children }) => {
     }));
   }, [enabledList]);
 
+  const icon = <div className={styles.tag}>{children}</div>;
+
   return (
     <ActionDropdown
       menu={{
         activeKey: menuKey(provider, model),
         className: styles.menu,
         items,
+        // 不加限高就会导致面板超长，顶部的内容会被隐藏
+        // https://github.com/user-attachments/assets/9c043c47-42c5-46ef-b5c1-bee89376f042
+        style: {
+          maxHeight: 500,
+          overflowY: 'scroll',
+        },
       }}
+      onOpenChange={onOpenChange}
+      open={open}
       placement={'topLeft'}
     >
-      <div className={styles.tag}>{children}</div>
+      {icon}
     </ActionDropdown>
   );
 });
