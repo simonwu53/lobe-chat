@@ -110,6 +110,9 @@
   "ollama": {
     "description": "Los modelos ofrecidos por Ollama abarcan ampliamente áreas como la generación de código, cálculos matemáticos, procesamiento multilingüe e interacciones conversacionales, apoyando diversas necesidades de implementación empresarial y local."
   },
+  "ollamacloud": {
+    "description": "Ollama Cloud ofrece un servicio de inferencia alojado oficialmente, acceso inmediato a la biblioteca de modelos de Ollama y soporte para interfaces compatibles con OpenAI."
+  },
   "openai": {
     "description": "OpenAI es una de las principales instituciones de investigación en inteligencia artificial a nivel mundial, cuyos modelos, como la serie GPT, están a la vanguardia del procesamiento del lenguaje natural. OpenAI se dedica a transformar múltiples industrias a través de soluciones de IA innovadoras y eficientes. Sus productos ofrecen un rendimiento y una rentabilidad significativos, siendo ampliamente utilizados en investigación, negocios y aplicaciones innovadoras."
   },
@@ -160,6 +163,9 @@
   },
   "v0": {
     "description": "v0 es un asistente de programación en pareja; solo necesitas describir tus ideas en lenguaje natural y él generará código e interfaces de usuario (UI) para tu proyecto."
+  },
+  "vercelaigateway": {
+    "description": "Vercel AI Gateway ofrece una API unificada para acceder a más de 100 modelos, permitiendo el uso de modelos de varios proveedores como OpenAI, Anthropic y Google a través de un único punto de acceso. Soporta configuración de presupuesto, monitoreo de uso, balanceo de carga de solicitudes y conmutación por error."
   },
   "vertexai": {
     "description": "La serie Gemini de Google es su modelo de IA más avanzado y versátil, desarrollado por Google DeepMind, diseñado específicamente para ser multimodal, soportando la comprensión y procesamiento sin interrupciones de texto, código, imágenes, audio y video. Es adecuado para una variedad de entornos, desde centros de datos hasta dispositivos móviles, mejorando enormemente la eficiencia y la aplicabilidad de los modelos de IA."

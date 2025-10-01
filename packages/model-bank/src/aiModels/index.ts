@@ -36,6 +36,7 @@ import { default as newapi } from './newapi';
 import { default as novita } from './novita';
 import { default as nvidia } from './nvidia';
 import { default as ollama } from './ollama';
+import { default as ollamacloud } from './ollamacloud';
 import { default as openai } from './openai';
 import { default as openrouter } from './openrouter';
 import { default as perplexity } from './perplexity';
@@ -53,6 +54,7 @@ import { default as tencentcloud } from './tencentcloud';
 import { default as togetherai } from './togetherai';
 import { default as upstage } from './upstage';
 import { default as v0 } from './v0';
+import { default as vercelaigateway } from './vercelaigateway';
 import { default as vertexai } from './vertexai';
 import { default as vllm } from './vllm';
 import { default as volcengine } from './volcengine';
@@ -119,6 +121,7 @@ export const LOBE_DEFAULT_MODEL_LIST = buildDefaultModelList({
   novita,
   nvidia,
   ollama,
+  ollamacloud,
   openai,
   openrouter,
   perplexity,
@@ -136,6 +139,7 @@ export const LOBE_DEFAULT_MODEL_LIST = buildDefaultModelList({
   togetherai,
   upstage,
   v0,
+  vercelaigateway,
   vertexai,
   vllm,
   volcengine,
@@ -184,6 +188,7 @@ export { default as newapi } from './newapi';
 export { default as novita } from './novita';
 export { default as nvidia } from './nvidia';
 export { default as ollama } from './ollama';
+export { default as ollamacloud } from './ollamacloud';
 export { gptImage1ParamsSchema, default as openai, openaiChatModels } from './openai';
 export { default as openrouter } from './openrouter';
 export { default as perplexity } from './perplexity';
@@ -201,6 +206,7 @@ export { default as tencentcloud } from './tencentcloud';
 export { default as togetherai } from './togetherai';
 export { default as upstage } from './upstage';
 export { default as v0 } from './v0';
+export { default as vercelaigateway } from './vercelaigateway';
 export { default as vertexai } from './vertexai';
 export { default as vllm } from './vllm';
 export { default as volcengine } from './volcengine';

@@ -110,6 +110,9 @@
   "ollama": {
     "description": "De modellen van Ollama bestrijken een breed scala aan gebieden, waaronder codegeneratie, wiskundige berekeningen, meertalige verwerking en interactieve dialogen, en voldoen aan de diverse behoeften van bedrijfs- en lokale implementaties."
   },
+  "ollamacloud": {
+    "description": "Ollama Cloud biedt officieel beheerde inferentiediensten, waarmee u direct toegang krijgt tot de Ollama-modelbibliotheek en ondersteuning voor OpenAI-compatibele interfaces."
+  },
   "openai": {
     "description": "OpenAI is 's werelds toonaangevende onderzoeksinstituut op het gebied van kunstmatige intelligentie, wiens ontwikkelde modellen zoals de GPT-serie de grenzen van natuurlijke taalverwerking verleggen. OpenAI streeft ernaar verschillende industrieën te transformeren door middel van innovatieve en efficiënte AI-oplossingen. Hun producten bieden opmerkelijke prestaties en kosteneffectiviteit, en worden op grote schaal gebruikt in onderzoek, commercie en innovatieve toepassingen."
   },
@@ -160,6 +163,9 @@
   },
   "v0": {
     "description": "v0 is een pair programming-assistent; je hoeft alleen je ideeën in natuurlijke taal te beschrijven, en het genereert code en gebruikersinterfaces (UI) voor je project."
+  },
+  "vercelaigateway": {
+    "description": "Vercel AI Gateway biedt een uniforme API voor toegang tot meer dan 100 modellen, waarmee u via één enkele endpoint modellen van verschillende aanbieders zoals OpenAI, Anthropic en Google kunt gebruiken. Ondersteunt budgetinstellingen, gebruiksmonitoring, verzoekbelastingbalancering en failover."
   },
   "vertexai": {
     "description": "De Gemini-serie van Google is zijn meest geavanceerde, algemene AI-modellen, ontwikkeld door Google DeepMind. Deze modellen zijn ontworpen voor multimodale toepassingen en ondersteunen naadloze begrip en verwerking van tekst, code, afbeeldingen, audio en video. Ze zijn geschikt voor verschillende omgevingen, van datacenters tot mobiele apparaten, en verbeteren aanzienlijk de efficiëntie en toepasbaarheid van AI-modellen."

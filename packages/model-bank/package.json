@@ -42,6 +42,7 @@
     "./novita": "./src/aiModels/novita.ts",
     "./nvidia": "./src/aiModels/nvidia.ts",
     "./ollama": "./src/aiModels/ollama.ts",
+    "./ollamacloud": "./src/aiModels/ollamacloud.ts",
     "./openai": "./src/aiModels/openai.ts",
     "./openrouter": "./src/aiModels/openrouter.ts",
     "./perplexity": "./src/aiModels/perplexity.ts",
@@ -59,6 +60,7 @@
     "./togetherai": "./src/aiModels/togetherai.ts",
     "./upstage": "./src/aiModels/upstage.ts",
     "./v0": "./src/aiModels/v0.ts",
+    "./vercelaigateway": "./src/aiModels/vercelaigateway.ts",
     "./vertexai": "./src/aiModels/vertexai.ts",
     "./vllm": "./src/aiModels/vllm.ts",
     "./volcengine": "./src/aiModels/volcengine.ts",
@@ -66,11 +68,12 @@
     "./xai": "./src/aiModels/xai.ts",
     "./xinference": "./src/aiModels/xinference.ts",
     "./zeroone": "./src/aiModels/zeroone.ts",
-    "./zhipu": "./src/aiModels/zhipu.ts"
+    "./zhipu": "./src/aiModels/zhipu.ts",
+    "./types": "./src/types/index.ts"
   },
   "scripts": {
     "test": "vitest",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage --silent='passed-only'"
   },
   "dependencies": {
     "zod": "^3.25.76"

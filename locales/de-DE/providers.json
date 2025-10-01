@@ -110,6 +110,9 @@
   "ollama": {
     "description": "Die von Ollama angebotenen Modelle decken ein breites Spektrum ab, darunter Code-Generierung, mathematische Berechnungen, mehrsprachige Verarbeitung und dialogbasierte Interaktionen, und unterstützen die vielfältigen Anforderungen an unternehmensgerechte und lokal angepasste Bereitstellungen."
   },
+  "ollamacloud": {
+    "description": "Ollama Cloud bietet offiziell gehostete Inferenzdienste, mit sofortigem Zugriff auf die Ollama-Modellbibliothek und Unterstützung für OpenAI-kompatible Schnittstellen."
+  },
   "openai": {
     "description": "OpenAI ist eine weltweit führende Forschungsinstitution im Bereich der künstlichen Intelligenz, deren entwickelte Modelle wie die GPT-Serie die Grenzen der Verarbeitung natürlicher Sprache vorantreiben. OpenAI setzt sich dafür ein, durch innovative und effiziente KI-Lösungen verschiedene Branchen zu transformieren. Ihre Produkte zeichnen sich durch herausragende Leistung und Wirtschaftlichkeit aus und finden breite Anwendung in Forschung, Wirtschaft und innovativen Anwendungen."
   },
@@ -160,6 +163,9 @@
   },
   "v0": {
     "description": "v0 ist ein Pair-Programming-Assistent, bei dem Sie Ihre Ideen einfach in natürlicher Sprache beschreiben können, und er generiert Code und Benutzeroberflächen (UI) für Ihr Projekt."
+  },
+  "vercelaigateway": {
+    "description": "Vercel AI Gateway bietet eine einheitliche API zum Zugriff auf über 100 Modelle und ermöglicht die Nutzung von Modellen verschiedener Anbieter wie OpenAI, Anthropic und Google über einen einzigen Endpunkt. Unterstützt Budgeteinstellungen, Nutzungsüberwachung, Lastenausgleich und Failover."
   },
   "vertexai": {
     "description": "Die Gemini-Serie von Google ist das fortschrittlichste, universelle KI-Modell, das von Google DeepMind entwickelt wurde. Es ist speziell für multimodale Anwendungen konzipiert und unterstützt das nahtlose Verständnis und die Verarbeitung von Text, Code, Bildern, Audio und Video. Es eignet sich für eine Vielzahl von Umgebungen, von Rechenzentren bis hin zu mobilen Geräten, und verbessert erheblich die Effizienz und Anwendbarkeit von KI-Modellen."
